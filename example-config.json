@@ -1,0 +1,19 @@
+{
+    "sms": {
+        "accountSid": "Twilio-SID",
+        "authToken": "Twilio-Auth-Token",
+        "myNumber": "Your-Phone-Number",
+        "port": "SMS-Port",
+        "tos": "Example TOS: By using this serivce, you agree to all terms and conditions as mentioned here: $URL - Standard SMS rates apply. Reply with y to accept, n to reject."
+    },
+    "web": {
+        "port": "Web-Port",
+        "url": "Used for scraping & Linking in specific SMS responses",
+        "backupURL": "Link to Mirror Site Hosting",
+        "apiURL": "API of desired data-source Site",
+        "title" : "Title for Webpages"
+    },
+    "db": {
+        "sqlAuth": "postgres://user:pass@example.com:5432/dbname"
+    }
+}
