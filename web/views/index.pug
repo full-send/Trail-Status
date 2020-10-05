@@ -1,0 +1,29 @@
+extends layout
+
+block layout-content
+  div.View.WelcomeView
+    h1.Banner Triangle Mountain Biking Mirror
+    div.Message
+      div.Title
+        h3(style='width:100%') Currently TMTB is: #{statusOutput.siteStatus}
+        h4(style='text-align:center') Last Updated: #{statusOutput.lastUpdated}
+        table(style='width:100%',border='1')
+          thead
+            tr
+              th Name
+              th Status
+              th Last Updated
+              th Notes
+
+          tbody
+            each status in statusOutput
+              tr
+                td #{status.name}
+                td(class=""+ status.open) #{status.open}
+                td #{status.prettyDate}
+                td #{status.notes} 
+          tfoot
+    div(style='height:200px')
+    //- div.NavButtons
+    //-   a(href="/user")
+    //-       div.NavButton Just dive in!
