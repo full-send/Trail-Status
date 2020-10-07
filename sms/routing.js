@@ -1,5 +1,4 @@
 const status = require('./status')
-const update = require('./update')
 const db = require('../database/db')
 const config = require('../config.json')
 module.exports = {

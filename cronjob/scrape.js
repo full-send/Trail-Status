@@ -7,9 +7,9 @@ module.exports = {
 const config = require('../config.json')
 const request = require("request-promise");
 const cheerio = require("cheerio");
-const url = config.db.web.url
-const backupURL = config.db.web.backupURL
-const apiURL = config.db.web.apiURL
+const url = config.web.url
+const backupURL = config.web.backupURL
+const apiURL = config.web.apiURL
 
 // Sends request to defined URL to grab the status
 async function getData() {

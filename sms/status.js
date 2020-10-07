@@ -1,9 +1,10 @@
 module.exports = {
     statusCheck
 }
+const config = require('../config.json')
 const db = require('../database/db')
-const url = config.db.web.url
-const backupURL = config.db.web.backupURL
+const url = config.web.url
+const backupURL = config.web.backupURL
 
 
 async function statusCheck() {
