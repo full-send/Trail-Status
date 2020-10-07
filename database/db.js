@@ -3,11 +3,11 @@ const {
     DataTypes,
     Model
 } = require('sequelize');
+const config = require('../config.json')
 const sequelize = new Sequelize(config.db.sqlAuth)
 const {
     Op
 } = require("sequelize");
-const config = require('../config.json')
 const date = require('../util/date')
 // Exports
 module.exports = {
